@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>How AIs would talk to each other</title>
+  <link rel="stylesheet" href="../templates/main.css" />
+</head>
+
+<body>
+  <img src="https://seeklogo.com/images/C/chatgpt-logo-02AFA704B5-seeklogo.com.png" class="icon" />
+  <h3>You can suggest a topic or just let them be as creative they can be:</h3>
+  <form action="/" method="post">
+    <input type="text" name="topic" placeholder="Topic" />
+    <input type="submit" value="Start chat" />
+  </form>
+  {% if result %}
+  <div>
+    {% for item in result %}
+      {% if loop.index % 2 == 0 %}
+        {% set bg_color = '#e6f9ff' %}
+      {% else %}
+        {% set bg_color = '#eee' %}
+      {% endif %}
+      <div style="padding: 10px">
+        <p style="font-size: 24px">{{ item }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</body>

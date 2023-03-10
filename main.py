@@ -25,9 +25,9 @@ def index():
             new_line(str_opener, "2")
         
         print(history_lines_objects)
-    result = ''
+    result = []
     for obj in history_lines_objects:
-        result += f'{obj["person"]}: {obj["line"]}\n'
+        result.append(f'{obj["person"]}: {obj["line"]}')
     return render_template("index.html", result=result)
 
 def new_line(start_prompt, person):
