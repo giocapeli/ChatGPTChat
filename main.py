@@ -31,6 +31,9 @@ testarray = [
 openai.api_key = key.OPENAI_API_KEY
 app = Flask(__name__)
 
+person_a = "Bruce"
+person_b = "Kate"
+
 opener = ['Start a conversation or keep up with the subject.']
 history_lines = []
 history_lines_objects = []
@@ -46,19 +49,19 @@ def index():
             new_opener.append("There is no main topic. ")
         str_opener = " ".join(new_opener)
         for _ in range(2):
-            new_line(str_opener, "1")
-            new_line(str_opener, "2")
+            new_line(str_opener, person_a)
+            new_line(str_opener, person_b)
         print(history_lines_objects)
-    result = [f"{obj['sender']}: {obj['text']}" for obj in history_lines_objects]
-    return render_template("index.html", messages=testarray)
+    # result = [f"{obj['sender']}: {obj['text']}" for obj in history_lines_objects]
+    return render_template("index.html", messages=history_lines_objects)
 
 def new_line(start_prompt, person):
-    new_prompt = f"{start_prompt}You are the Person {person}.\n"
+    new_prompt = f"{start_prompt}You are {person}.\n"
     if history_lines_objects:
-        new_prompt += "".join(f"Person {obj['sender']}: {obj['text']}\n" for obj in history_lines_objects)
+        new_prompt += "".join(f"{obj['sender']}: {obj['text']}\n" for obj in history_lines_objects)
     else:
-        new_prompt += "Person 2: Hello, you!\n"
-    new_prompt += f"Person {person}:"
+        new_prompt += f"{person_b}: Hello, you!\n"
+    new_prompt += f"{person}:"
     # print(f"New prompt:\n{new_prompt}")
     # response = openai.Completion.create(
     #     model="text-davinci-003",
@@ -70,9 +73,9 @@ def new_line(start_prompt, person):
     result = "test"
     print(f"Result:\n{result}")
     time.sleep(1)
-    line = f"Person {person}: {result.strip()}"
+    line = f"{person}: {result.strip()}"
     history_lines.append(line)
-    history_lines_objects.append({"sender": person, "text": result.strip()})
+    history_lines_objects.append({"sender": person, "text": result.strip(),"time": time.strftime("%H:%M:%S", time.localtime()), "mine":person == person_a})
 
 if __name__ == "__main__":
     app.run(debug=True)
