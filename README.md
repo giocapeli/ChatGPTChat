@@ -13,6 +13,7 @@ This app use the OpenAI API to simulate a conversation of two ChatGPT, taking so
 
 ### Next features
 
+- Give more control to the user on the API requests
 - Load and keep track of the history.
 - Improve token estimation to create better prompts
 - Split modules
