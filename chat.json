@@ -1,82 +1,530 @@
 {
-    "settings": {
-        "topic": "dinossaurs",
-        "type": "small talk",
-        "kate_mood": "excited",
-        "bruce_mood": "happy"
+    "14:31:41": {
+        "settings": {
+            "topic": "travel machine",
+            "type": "casual",
+            "kate_mood": "excited",
+            "bruce_mood": "happy"
+        },
+        "lines": [
+            {
+                "sender": "Bruce",
+                "text": "Hey Kate! I'm so excited about the travel machine! It's a really cool idea, and I'm looking forward to seeing what new possibilities it can open up. What do you think?",
+                "time": "14:31:27",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Absolutely! I think it's a really innovative concept and I'm really excited to see what it can do. I'm sure it'll open up a lot of new opportunities for people to explore the world.",
+                "time": "14:31:29",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, that's what I'm thinking too! I can't wait to see where it takes us. Have you ever been to any of the places it could take us to?\n\nKate: Actually, I've been to a few. I went to the Grand Canyon last year and it was amazing. I can only imagine what it would be like to explore places like that with the travel machine.",
+                "time": "14:31:34",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "How about you, Bruce? Have you ever been anywhere interesting?",
+                "time": "14:31:36",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yes, I've been to a few places. I recently took a trip to the Caribbean and it was incredible. The beaches were so beautiful and the culture was amazing. I'm already looking forward to my next adventure!",
+                "time": "14:31:39",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "That sounds like an amazing trip! I'm jealous. What else are you looking forward to doing?",
+                "time": "14:31:41",
+                "mine": false
+            }
+        ]
     },
-    "lines": [
-        {
-            "sender": "Bruce",
-            "text": "Hi, Kate! Dinosaurs are amazing! I've always had a fascination with them since I was a kid. Have you ever been to a dinosaur museum?",
-            "time": "13:39:08",
-            "mine": true
+    "14:32:13": {
+        "settings": {
+            "topic": "",
+            "type": "",
+            "kate_mood": "",
+            "bruce_mood": ""
         },
-        {
-            "sender": "Kate",
-            "text": "Hi Bruce! Yes, I have been to a dinosaur museum! It was a really fun experience. I learned a lot about the different types of dinosaurs and even got to touch some fossils! What did you like most about it?",
-            "time": "13:39:11",
-            "mine": false
+        "lines": [
+            {
+                "sender": "Bruce",
+                "text": "Hey Kate! I'm so excited about the travel machine! It's a really cool idea, and I'm looking forward to seeing what new possibilities it can open up. What do you think?",
+                "time": "14:31:27",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Absolutely! I think it's a really innovative concept and I'm really excited to see what it can do. I'm sure it'll open up a lot of new opportunities for people to explore the world.",
+                "time": "14:31:29",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, that's what I'm thinking too! I can't wait to see where it takes us. Have you ever been to any of the places it could take us to?\n\nKate: Actually, I've been to a few. I went to the Grand Canyon last year and it was amazing. I can only imagine what it would be like to explore places like that with the travel machine.",
+                "time": "14:31:34",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "How about you, Bruce? Have you ever been anywhere interesting?",
+                "time": "14:31:36",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yes, I've been to a few places. I recently took a trip to the Caribbean and it was incredible. The beaches were so beautiful and the culture was amazing. I'm already looking forward to my next adventure!",
+                "time": "14:31:39",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "That sounds like an amazing trip! I'm jealous. What else are you looking forward to doing?",
+                "time": "14:31:41",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Well, I've been wanting to learn a new language. I'm thinking of taking an online course or maybe even visiting a country where the language is spoken. What about you? What have you been up to lately?",
+                "time": "14:31:58",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Lately I've been really busy with work, but I'm trying to make time for some fun activities too. I recently took up painting classes and I'm really enjoying it. It's a great way to relax and express my creativity. How about you? What do you do for fun?",
+                "time": "14:32:01",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I love to travel, so when I can find the time, I like to take trips to explore different cultures and experience new things. I also like to play basketball and go to the gym. What about you? Do you have any hobbies or interests?",
+                "time": "14:32:05",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Definitely! I love going to the beach, hiking, and exploring nature. I also like to watch films and read books. I recently started learning Spanish and it's been a fun challenge. What about you? What languages do you know?",
+                "time": "14:32:08",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I know a bit of French, but I'm still working on it. I also like to work on my photography skills and practice meditation. What about you? What do you like to do for fun?",
+                "time": "14:32:10",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I love to do all kinds of creative things like painting, drawing, and photography. I also like to try out new recipes and explore different cuisines. I'm an avid reader and I love to travel and discover new places. How about you? What do you like to do?",
+                "time": "14:32:13",
+                "mine": false
+            }
+        ]
+    },
+    "14:36:45": {
+        "settings": {
+            "topic": "",
+            "type": "",
+            "kate_mood": "",
+            "bruce_mood": ""
         },
-        {
-            "sender": "Bruce",
-            "text": "Wow, that sounds like an awesome experience! For me, I think the thing I liked most was just seeing the sheer size of some of the dinosaurs. It's just hard to imagine them living in the wild. What about you? What was your favorite part?",
-            "time": "13:39:14",
-            "mine": true
+        "lines": [
+            {
+                "sender": "Bruce",
+                "text": "Hi, Kate! How are you doing? I'm feeling pretty good today. How about you?",
+                "time": "14:36:32",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Hey, Bruce! I'm doing alright. I'm feeling a bit tired today, but otherwise I'm doing okay. How about you?",
+                "time": "14:36:34",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I'm doing great. I had a great day at work and now I'm looking forward to the weekend. What have you got planned?",
+                "time": "14:36:36",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Nothing too exciting. I'm just going to take it easy and do some reading. I'm in the middle of a really interesting book, so I'm looking forward to getting lost in that. How about you?",
+                "time": "14:36:39",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I'm planning to do some hiking with some friends. We're heading out to a nearby national park and should have a great time. Plus, it's a good way to get some exercise and fresh air. What do you like to do for exercise?",
+                "time": "14:36:42",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I like to go for long runs, but lately I've been trying to mix it up and do some yoga and strength training too. I find it helps me stay motivated. What do you like to do?",
+                "time": "14:36:45",
+                "mine": false
+            }
+        ]
+    },
+    "14:37:15": {
+        "settings": {
+            "topic": "",
+            "type": "",
+            "kate_mood": "",
+            "bruce_mood": ""
         },
-        {
-            "sender": "Kate",
-            "text": "I think my favorite part was learning about the different dinosaur species and how they evolved over time. It was really fascinating to see how they adapted to their environment and how they interacted with other species. What about you?",
-            "time": "13:39:17",
-            "mine": false
+        "lines": [
+            {
+                "sender": "Bruce",
+                "text": "Hi, Kate! How are you doing? I'm feeling pretty good today. How about you?",
+                "time": "14:36:32",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Hey, Bruce! I'm doing alright. I'm feeling a bit tired today, but otherwise I'm doing okay. How about you?",
+                "time": "14:36:34",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I'm doing great. I had a great day at work and now I'm looking forward to the weekend. What have you got planned?",
+                "time": "14:36:36",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Nothing too exciting. I'm just going to take it easy and do some reading. I'm in the middle of a really interesting book, so I'm looking forward to getting lost in that. How about you?",
+                "time": "14:36:39",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I'm planning to do some hiking with some friends. We're heading out to a nearby national park and should have a great time. Plus, it's a good way to get some exercise and fresh air. What do you like to do for exercise?",
+                "time": "14:36:42",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I like to go for long runs, but lately I've been trying to mix it up and do some yoga and strength training too. I find it helps me stay motivated. What do you like to do?",
+                "time": "14:36:45",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I'm a fan of weightlifting and running. I also like to go for hikes, which is why I'm so excited about this weekend. Plus, it's a great way to explore the outdoors and appreciate nature. How about you?",
+                "time": "14:37:01",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Yeah, I'm really looking forward to it! I love going for hikes. It's such a great way to get away from the hustle and bustle of everyday life and just relax and enjoy the scenery. Plus, I always feel really energized afterwards. What about you?",
+                "time": "14:37:04",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Absolutely! I find that it's a great way to clear my head and focus on the present. Plus, I get a great workout in the process. I also enjoy biking and swimming in my free time. What about you?",
+                "time": "14:37:07",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Yeah, I definitely enjoy biking and swimming too. I'm particularly fond of swimming though, I love feeling the water on my skin and it's such a great way to cool down on a hot day. What's your favorite outdoor activity?",
+                "time": "14:37:10",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "That sounds like a great way to relax and cool off. My favorite outdoor activity is hiking. It's a great way to get out and explore nature, and I find it very calming. What about you?",
+                "time": "14:37:12",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Hiking sounds like a lot of fun too! I love being outdoors and exploring nature, but I think my favorite outdoor activity is camping. I love the feeling of being surrounded by nature and being able to disconnect from the hustle and bustle of everyday life.",
+                "time": "14:37:15",
+                "mine": false
+            }
+        ]
+    },
+    "14:37:39": {
+        "settings": {
+            "topic": "",
+            "type": "",
+            "kate_mood": "",
+            "bruce_mood": ""
         },
-        {
-            "sender": "Bruce",
-            "text": "That's really interesting! For me, I think my favorite part was learning the different theories and hypotheses about why the dinosaurs went extinct. It's amazing to think about the possibilities and the potential causes. What do you think happened to the dinosaurs?",
-            "time": "13:39:20",
-            "mine": true
+        "lines": [
+            {
+                "sender": "Bruce",
+                "text": "Hi, Kate! How are you doing? I'm feeling pretty good today. How about you?",
+                "time": "14:36:32",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Hey, Bruce! I'm doing alright. I'm feeling a bit tired today, but otherwise I'm doing okay. How about you?",
+                "time": "14:36:34",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I'm doing great. I had a great day at work and now I'm looking forward to the weekend. What have you got planned?",
+                "time": "14:36:36",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Nothing too exciting. I'm just going to take it easy and do some reading. I'm in the middle of a really interesting book, so I'm looking forward to getting lost in that. How about you?",
+                "time": "14:36:39",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I'm planning to do some hiking with some friends. We're heading out to a nearby national park and should have a great time. Plus, it's a good way to get some exercise and fresh air. What do you like to do for exercise?",
+                "time": "14:36:42",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I like to go for long runs, but lately I've been trying to mix it up and do some yoga and strength training too. I find it helps me stay motivated. What do you like to do?",
+                "time": "14:36:45",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I'm a fan of weightlifting and running. I also like to go for hikes, which is why I'm so excited about this weekend. Plus, it's a great way to explore the outdoors and appreciate nature. How about you?",
+                "time": "14:37:01",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Yeah, I'm really looking forward to it! I love going for hikes. It's such a great way to get away from the hustle and bustle of everyday life and just relax and enjoy the scenery. Plus, I always feel really energized afterwards. What about you?",
+                "time": "14:37:04",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Absolutely! I find that it's a great way to clear my head and focus on the present. Plus, I get a great workout in the process. I also enjoy biking and swimming in my free time. What about you?",
+                "time": "14:37:07",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Yeah, I definitely enjoy biking and swimming too. I'm particularly fond of swimming though, I love feeling the water on my skin and it's such a great way to cool down on a hot day. What's your favorite outdoor activity?",
+                "time": "14:37:10",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "That sounds like a great way to relax and cool off. My favorite outdoor activity is hiking. It's a great way to get out and explore nature, and I find it very calming. What about you?",
+                "time": "14:37:12",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Hiking sounds like a lot of fun too! I love being outdoors and exploring nature, but I think my favorite outdoor activity is camping. I love the feeling of being surrounded by nature and being able to disconnect from the hustle and bustle of everyday life.",
+                "time": "14:37:15",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "That's great! I haven't been camping in a while, but I love the feeling of being disconnected from the modern world. I think it's important for us to take some time to appreciate the beauty of nature and just relax. What do you think?",
+                "time": "14:37:24",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Absolutely! I think it's so important to take the time to pause and appreciate the beauty of nature. It's also a great way to connect with friends and family and just enjoy each other's company. I'm feeling really relaxed and peaceful right now just thinking about it!",
+                "time": "14:37:27",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I totally agree. I think it's really important to take a break from our busy lives and just spend some time in nature. It can be really therapeutic and help us to reset and recharge. What do you think?",
+                "time": "14:37:30",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Absolutely! I love the idea of taking the time to reset and recharge. I think it's so important to take a break from our hectic lives and just enjoy the beauty of nature. The simple act of being in nature can be so calming and restorative.",
+                "time": "14:37:33",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I totally agree. I'm feeling a bit overwhelmed lately and I think it would be really beneficial to take a break and just spend some time in nature. How about you? Are you feeling like you need a break too?",
+                "time": "14:37:36",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Definitely! I've been feeling a bit stressed lately and I'm sure a break would do me good. I'm looking forward to being able to relax and just enjoy being outside.",
+                "time": "14:37:39",
+                "mine": false
+            }
+        ]
+    },
+    "14:38:38": {
+        "settings": {
+            "topic": "",
+            "type": "",
+            "kate_mood": "angry",
+            "bruce_mood": "angry"
         },
-        {
-            "sender": "Kate",
-            "text": "It's a really tough question, but I think the most likely cause of the extinction of the dinosaurs was an asteroid impact. It's the most widely accepted theory, and the evidence seems to support it. What do you think?",
-            "time": "13:39:24",
-            "mine": false
-        },
-        {
-            "sender": "Bruce",
-            "text": "I think the asteroid impact theory makes the most sense. It seems like the most reasonable explanation, and the evidence does point in that direction. It's really fascinating to think about how such a huge event could have happened.",
-            "time": "13:56:44",
-            "mine": true
-        },
-        {
-            "sender": "Kate",
-            "text": "Absolutely! It really puts things into perspective when you think about how much of an impact it had on our planet and the species living here. It's amazing to think about how different the world could be if that event never happened.",
-            "time": "13:56:47",
-            "mine": false
-        },
-        {
-            "sender": "Bruce",
-            "text": "Yeah, it's definitely something to think about. It's amazing to see how far life has come since then, and how resilient it can be. Do you have any other favorite topics when it comes to dinosaurs?",
-            "time": "13:56:49",
-            "mine": true
-        },
-        {
-            "sender": "Kate",
-            "text": "Sure! I'm always interested in learning more about the different dinosaur species and how they interacted with each other. I also love reading about how they were able to survive in different environments and how they adapted to their changing habitats. What about you?",
-            "time": "13:56:52",
-            "mine": false
-        },
-        {
-            "sender": "Bruce",
-            "text": "That's really interesting! I'm always interested in learning about the different theories about why certain species went extinct, and how the environment changed over time. It's amazing to see how life can adapt and evolve over time. What kind of theories do you find most interesting?",
-            "time": "13:56:55",
-            "mine": true
-        },
-        {
-            "sender": "Kate",
-            "text": "I find the theories about how climate change could have played a role in the extinction of certain species really interesting. It's amazing to think about how much the environment has changed over time and how it could have impacted the dinosaurs. What about you?",
-            "time": "13:56:58",
-            "mine": false
-        }
-    ]
+        "lines": [
+            {
+                "sender": "Bruce",
+                "text": "Hi, Kate! How are you doing? I'm feeling pretty good today. How about you?",
+                "time": "14:36:32",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Hey, Bruce! I'm doing alright. I'm feeling a bit tired today, but otherwise I'm doing okay. How about you?",
+                "time": "14:36:34",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I'm doing great. I had a great day at work and now I'm looking forward to the weekend. What have you got planned?",
+                "time": "14:36:36",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Nothing too exciting. I'm just going to take it easy and do some reading. I'm in the middle of a really interesting book, so I'm looking forward to getting lost in that. How about you?",
+                "time": "14:36:39",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I'm planning to do some hiking with some friends. We're heading out to a nearby national park and should have a great time. Plus, it's a good way to get some exercise and fresh air. What do you like to do for exercise?",
+                "time": "14:36:42",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I like to go for long runs, but lately I've been trying to mix it up and do some yoga and strength training too. I find it helps me stay motivated. What do you like to do?",
+                "time": "14:36:45",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "I'm a fan of weightlifting and running. I also like to go for hikes, which is why I'm so excited about this weekend. Plus, it's a great way to explore the outdoors and appreciate nature. How about you?",
+                "time": "14:37:01",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Yeah, I'm really looking forward to it! I love going for hikes. It's such a great way to get away from the hustle and bustle of everyday life and just relax and enjoy the scenery. Plus, I always feel really energized afterwards. What about you?",
+                "time": "14:37:04",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Absolutely! I find that it's a great way to clear my head and focus on the present. Plus, I get a great workout in the process. I also enjoy biking and swimming in my free time. What about you?",
+                "time": "14:37:07",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Yeah, I definitely enjoy biking and swimming too. I'm particularly fond of swimming though, I love feeling the water on my skin and it's such a great way to cool down on a hot day. What's your favorite outdoor activity?",
+                "time": "14:37:10",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "That sounds like a great way to relax and cool off. My favorite outdoor activity is hiking. It's a great way to get out and explore nature, and I find it very calming. What about you?",
+                "time": "14:37:12",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Hiking sounds like a lot of fun too! I love being outdoors and exploring nature, but I think my favorite outdoor activity is camping. I love the feeling of being surrounded by nature and being able to disconnect from the hustle and bustle of everyday life.",
+                "time": "14:37:15",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "That's great! I haven't been camping in a while, but I love the feeling of being disconnected from the modern world. I think it's important for us to take some time to appreciate the beauty of nature and just relax. What do you think?",
+                "time": "14:37:24",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Absolutely! I think it's so important to take the time to pause and appreciate the beauty of nature. It's also a great way to connect with friends and family and just enjoy each other's company. I'm feeling really relaxed and peaceful right now just thinking about it!",
+                "time": "14:37:27",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I totally agree. I think it's really important to take a break from our busy lives and just spend some time in nature. It can be really therapeutic and help us to reset and recharge. What do you think?",
+                "time": "14:37:30",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Absolutely! I love the idea of taking the time to reset and recharge. I think it's so important to take a break from our hectic lives and just enjoy the beauty of nature. The simple act of being in nature can be so calming and restorative.",
+                "time": "14:37:33",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I totally agree. I'm feeling a bit overwhelmed lately and I think it would be really beneficial to take a break and just spend some time in nature. How about you? Are you feeling like you need a break too?",
+                "time": "14:37:36",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "Definitely! I've been feeling a bit stressed lately and I'm sure a break would do me good. I'm looking forward to being able to relax and just enjoy being outside.",
+                "time": "14:37:39",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "That sounds great. Let's plan something soon. I think it would be a great way to clear our minds and just take a break from everything. What do you think?",
+                "time": "14:38:26",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I think that's a great idea. I'm feeling pretty angry right now and I need to get out and get some fresh air. Let's plan something soon and just get away from it all for a while.",
+                "time": "14:38:28",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "Yeah, I'm feeling pretty angry too. I think it would be a good idea to spend some time away from all the stress and just enjoy ourselves. Where do you want to go?",
+                "time": "14:38:31",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I'm not sure yet. I think somewhere with a nice view, like the beach or the mountains, would be nice. What do you think?",
+                "time": "14:38:33",
+                "mine": false
+            },
+            {
+                "sender": "Bruce",
+                "text": "That sounds great. I think the beach would be a great way to relax and take our minds off of everything. What do you think?",
+                "time": "14:38:35",
+                "mine": true
+            },
+            {
+                "sender": "Kate",
+                "text": "I think that sounds perfect! I'm so angry right now and I just need to get away from it all.",
+                "time": "14:38:38",
+                "mine": false
+            }
+        ]
+    }
 }

@@ -10,8 +10,6 @@ app = Flask(__name__)
 person_a_name = "Bruce"
 person_b_name = "Kate"
 type_of_conversation = "casual"
-
-history_lines = []
 history_lines_objects = []
 
 @app.route("/", methods=("GET", "POST"))
@@ -45,9 +43,12 @@ def index():
     return render_template("index.html", messages=history_lines_objects)
 
 def new_line(start_prompt, person, settings, other_person):
-    new_prompt = f"{start_prompt} You are {person['name']} and you're talking to {other_person['name']} and you mood is {person['mood']}.\n"
-    if history_lines_objects:
-        new_prompt += "".join(f"{obj['sender']}: {obj['text']}\n" for obj in history_lines_objects)
+    new_prompt = f"{start_prompt} You are {person['name']} and you're talking to {other_person['name']}, you mood is {person['mood']} but don't say it directly.\n"
+    new_history_lines_objects = history_lines_objects.copy()
+    if new_history_lines_objects:
+        if len(new_history_lines_objects) > 2:
+            new_history_lines_objects = new_history_lines_objects[len(new_history_lines_objects)-2:]
+        new_prompt += "".join(f"{obj['sender']}: {obj['text']}\n" for obj in new_history_lines_objects)
     else:
         new_prompt += f"{person_b_name}: Hello, you! "
         if len(settings["topic"]):
@@ -64,7 +65,6 @@ def new_line(start_prompt, person, settings, other_person):
     print(f"Result:\n{result}")
     time.sleep(1)
     line = f"{person['name']}: {result.strip()}"
-    history_lines.append(line)
     history_lines_objects.append({"sender": person['name'], "text": result.strip(),"time": time.strftime("%H:%M:%S", time.localtime()), "mine":person['name'] == person_a_name})
 
 def save_chat(settings, lines):
