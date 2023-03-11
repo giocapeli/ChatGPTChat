@@ -2,6 +2,8 @@
 
 This app use the OpenAI API to simulate a conversation of two ChatGPT, taking some settings from the user and manipulation the prompt.
 
+![alt text](/static/chatgptchat.gif)
+
 ### V0.1 - Initial
 
 - Every imput is optional.
@@ -13,6 +15,7 @@ This app use the OpenAI API to simulate a conversation of two ChatGPT, taking so
 
 - Load and keep track of the history.
 - Improve token estimation to create better prompts
+- Split modules
 
 ## Setup
 
