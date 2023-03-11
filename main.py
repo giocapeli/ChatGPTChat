@@ -3,38 +3,14 @@ import time
 import openai
 from flask import Flask, redirect, render_template, request, url_for
 
-testarray = [
-  {
-    "sender": "Alice",
-    "text": "Hey, how are you?",
-    "timestamp": "2022-03-10T13:45:00.000Z",
-    "mine":True
-  },
-  {
-    "sender": "Bob",
-    "text": "I'm good, thanks for asking. How about you?",
-    "timestamp": "2022-03-10T13:46:30.000Z"
-  },
-  {
-    "sender": "Alice",
-    "text": "I'm doing well too, thanks.",
-    "timestamp": "2022-03-10T13:48:15.000Z",
-    "mine":True
-  },
-  {
-    "sender": "Bob",
-    "text": "That's great to hear!",
-    "timestamp": "2022-03-10T13:49:00.000Z"
-  }
-]
-
 openai.api_key = key.OPENAI_API_KEY
 app = Flask(__name__)
 
 person_a = "Bruce"
 person_b = "Kate"
+type_of_conversation = "casual"
 
-opener = ['Start a conversation or keep up with the subject.']
+opener = [f'Start a {type_of_conversation} conversation or keep up with the subject.']
 history_lines = []
 history_lines_objects = []
 
@@ -43,25 +19,23 @@ def index():
     if request.method == "POST":
         new_opener = opener.copy()
         topic = request.form.get("topic", "")
-        if topic:
-            new_opener.append(f"The topic is {topic}. ")
-        else:
-            new_opener.append("There is no main topic. ")
+        type_of_conversation = request.form.get("type", "")
         str_opener = " ".join(new_opener)
         for _ in range(3):
-            new_line(str_opener, person_a)
-            new_line(str_opener, person_b)
+            new_line(str_opener, person_a, topic)
+            new_line(str_opener, person_b, topic)
         print(history_lines_objects)
-    # result = [f"{obj['sender']}: {obj['text']}" for obj in history_lines_objects]
     return render_template("index.html", messages=history_lines_objects)
 
-def new_line(start_prompt, person):
+def new_line(start_prompt, person, topic):
     new_prompt = f"{start_prompt}You are {person}.\n"
     if history_lines_objects:
         new_prompt += "".join(f"{obj['sender']}: {obj['text']}\n" for obj in history_lines_objects)
     else:
-        new_prompt += f"{person_b}: Hello, you!\n"
-    new_prompt += f"{person}:"
+        new_prompt += f"{person_b}: Hello, you! "
+        if len(topic):
+            new_prompt += f'What do you think about {topic}?'
+    new_prompt += f"\n{person}:"
     print(f"New prompt:\n{new_prompt}")
     response = openai.Completion.create(
         model="text-davinci-003",

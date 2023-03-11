@@ -2,146 +2,70 @@
 <html>
 <head>
 	<title>WhatsApp ChatGPT</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #F6F6F6;
-			font-family: Arial, sans-serif;
-		}
-
-		.chat {
-			width: 350px;
-			margin: 20px auto;
-			background-color: #fff;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-			border-radius: 10px;
-			overflow: hidden;
-		}
-
-		.chat .header {
-			display: flex;
-			align-items: center;
-			padding: 10px;
-			background-color: #25D366;
-			color: #fff;
-		}
-
-		.chat .header .avatar {
-			width: 40px;
-			height: 40px;
-			margin-right: 10px;
-			border-radius: 50%;
-			/* background-color: #fff; */
-			background-image: url('https://seeklogo.com/images/C/chatgpt-logo-02AFA704B5-seeklogo.com.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-
-		.chat .header .title {
-			font-size: 16px;
-			font-weight: bold;
-			flex-grow: 1;
-			text-align: center;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-			overflow: hidden;
-		}
-
-		.chat .messages {
-			padding: 10px;
-			height: 400px;
-			overflow-y: scroll;
-			scroll-behavior: smooth;
-		}
-
-		.chat .message {
-			margin-bottom: 10px;
-		}
-
-		.chat .message .bubble {
-			max-width: 250px;
-			padding: 10px;
-			border-radius: 10px;
-			background-color: #474747;
-			color: #ffffff;
-			display: inline-block;
-			font-size: 14px;
-		}
-		.chat .messagemine .bubblemine {
-			max-width: 250px;
-			padding: 10px;
-			border-radius: 10px;
-			background-color: #00b94d;
-			color: #ffffff;
-			display: inline-block;
-			font-size: 14px;
-			/* text-align: right; */
-
-		}
-
-		.chat .message .sender {
-			font-size: 12px;
-			color: #9C9C9C;
-			margin-left: 10px;
-			margin-bottom: 5px;
-		}
-
-		.chat .messagemine .sender {
-			font-size: 12px;
-			color: #9C9C9C;
-			margin-right: 10px;
-			margin-bottom: 5px;
-		}
-
-		.chat .message .time {
-			font-size: 10px;
-			color: #9C9C9C;
-			margin-left: 10px;
-			margin-top: 5px;
-		}
-		.chat .messagemine .time {
-			font-size: 10px;
-			color: #9C9C9C;
-			margin-right: 10px;
-			margin-top: 5px;
-		}
-
-		.chat .messagemine {
-			text-align: right;
-		}
-
-		.chat .message .mine .bubble {
-			background-color: #DCF8C6;
-			color: #000;
-		}
-
-		.chat .message .mine .time {
-			text-align: right;
-		}
-	</style>
+	<link rel="stylesheet" href= "{{ url_for('static',filename='style.css') }}">
 </head>
 <body>
-	<div class="chat">
-		<div class="header">
-			<div class="avatar"></div>
-			<div class="title">ChatGPT WhatsApp</div>
+	<div id="chatbox" class="chatbox">
+		<div class="chat">
+			<div class="header">
+				<div class="avatar"></div>
+				<div class="title">ChatGPT WhatsApp</div>
+			</div>
+			<div class="messages">
+				<!-- Loop through the messages array and generate the HTML for each message -->
+				{% for message in messages %}
+					<div class="message{% if message.mine %}mine{% endif %}">
+						<div class="sender">{{ message.sender }}</div>
+						<div class="bubble{% if message.mine %}mine{% endif %}">{{ message.text }}</div>
+						<div class="time">{{ message.time }}</div>
+					</div>
+				{% endfor %}
+			</div>
 		</div>
-		<div class="messages">
-			<!-- Loop through the messages array and generate the HTML for each message -->
-			{% for message in messages %}
-				<div class="message{% if message.mine %}mine{% endif %}">
-					<div class="sender">{{ message.sender }}</div>
-					<div class="bubble{% if message.mine %}mine{% endif %}">{{ message.text }}</div>
-					<div class="time">{{ message.time }}</div>
-				</div>
-			{% endfor %}
-        </div>
-    </div>
-	<form action="/" method="post">
-		<input type="text" name="topic" placeholder="Topic" />
-		<input type="submit" value="Start chat" />
-	</form>
+	</div>
+	<div id="formbox" class="formbox">
+	<form class="form" action="/" method="post">
+		<span class="formitem">
+		  <input type="text" name="topic" placeholder="Topic" />
+		</span>
+		<span class="formitem">
+		  <label for="type">Type of conversation:</label>
+		  <select name="type" id="type">
+			<option value="">Random</option>
+			<option value="formal">Formal</option>
+			<option value="casual">Casual</option>
+			<option value="small talk">Small Talk</option>
+			<option value="boring">Boring</option>
+			<option value="interesting">Interesting</option>
+		  </select>
+		</span>
+		<span class="formitem">
+		  <label for="kate_mood">Kate mood:</label>
+		  <select name="kate_mood" id="kate_mood">
+			<option value="">Random</option>
+			<option value="angry">Angry</option>
+			<option value="happy">Happy</option>
+			<option value="excited">Excited</option>
+			<option value="depressed">Depressed</option>
+			<option value="bored">Bored</option>
+		  </select>
+		</span>
+		<span class="formitem">
+		  <label for="bruce_mood">Bruce mood:</label>
+		  <select name="bruce_mood" id="bruce_mood">
+			<option value="">Random</option>
+			<option value="angry">Angry</option>
+			<option value="happy">Happy</option>
+			<option value="excited">Excited</option>
+			<option value="depressed">Depressed</option>
+			<option value="bored">Bored</option>
+		  </select>
+		</span>
+		<span class="formitem">
+		  <input type="submit" value="Start chat" />
+		</span>
+	  </form>	 
+	</div> 
 </body>
 </html>
         
