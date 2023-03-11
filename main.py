@@ -14,6 +14,7 @@ history_lines_objects = []
 
 @app.route("/", methods=("GET", "POST"))
 def index():
+    conversation_id = time.strftime("%H%M%S", time.localtime())
     if request.method == "POST":
         topic = request.form.get("topic", "")
         type_of_conversation = request.form.get("type", "")
@@ -39,7 +40,7 @@ def index():
         for _ in range(3):
             new_line(str_opener, person_a, settings, person_b)
             new_line(str_opener, person_b, settings, person_a)
-        save_chat(settings, history_lines_objects)
+        save_chat(settings, history_lines_objects, conversation_id)
     return render_template("index.html", messages=history_lines_objects)
 
 def new_line(start_prompt, person, settings, other_person):
@@ -67,11 +68,13 @@ def new_line(start_prompt, person, settings, other_person):
     line = f"{person['name']}: {result.strip()}"
     history_lines_objects.append({"sender": person['name'], "text": result.strip(),"time": time.strftime("%H:%M:%S", time.localtime()), "mine":person['name'] == person_a_name})
 
-def save_chat(settings, lines):
+def save_chat(settings, lines, conversation_id):
     history = {
-        time.strftime("%H:%M:%S", time.localtime()):{
-        "settings":settings,
-        "lines":lines
+        conversation_id:{
+            time.strftime("%H:%M:%S", time.localtime()):{
+                "settings":settings,
+                "lines":lines
+            }
         }
     }
     loaded_data = history
