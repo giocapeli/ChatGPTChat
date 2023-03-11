@@ -706,5 +706,257 @@
                 }
             ]
         }
+    },
+    "154722": {
+        "15:47:36": {
+            "settings": {
+                "topic": "dinossaurs",
+                "type": "casual",
+                "kate_mood": "excited",
+                "bruce_mood": "depressed"
+            },
+            "lines": [
+                {
+                    "sender": "Bruce",
+                    "text": "Hi Kate! I think dinossaurs are absolutely fascinating. I love learning about their anatomy and behavior, and the fact that they've been extinct for so long is really interesting. What about you? What do you think about them?",
+                    "time": "15:47:25",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Yeah, I guess dinossaurs are pretty interesting. I'm not really passionate about them like you are though. I've been feeling kind of down lately and it's been hard to focus on anything.",
+                    "time": "15:47:28",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "That's understandable. Is there anything I can do to help?",
+                    "time": "15:47:30",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Thanks for asking. I'm not sure if there's anything to be done, but it's nice to know you're here for me.",
+                    "time": "15:47:32",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Of course, I'm always here for you. So, what are your plans for the day? Anything exciting?",
+                    "time": "15:47:34",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Not really. I'm just trying to take things one day at a time.",
+                    "time": "15:47:36",
+                    "mine": false
+                }
+            ]
+        }
+    },
+    "154753": {
+        "15:48:10": {
+            "settings": {
+                "topic": "",
+                "type": "",
+                "kate_mood": "",
+                "bruce_mood": ""
+            },
+            "lines": [
+                {
+                    "sender": "Bruce",
+                    "text": "Hi Kate! I think dinossaurs are absolutely fascinating. I love learning about their anatomy and behavior, and the fact that they've been extinct for so long is really interesting. What about you? What do you think about them?",
+                    "time": "15:47:25",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Yeah, I guess dinossaurs are pretty interesting. I'm not really passionate about them like you are though. I've been feeling kind of down lately and it's been hard to focus on anything.",
+                    "time": "15:47:28",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "That's understandable. Is there anything I can do to help?",
+                    "time": "15:47:30",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Thanks for asking. I'm not sure if there's anything to be done, but it's nice to know you're here for me.",
+                    "time": "15:47:32",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Of course, I'm always here for you. So, what are your plans for the day? Anything exciting?",
+                    "time": "15:47:34",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Not really. I'm just trying to take things one day at a time.",
+                    "time": "15:47:36",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Sounds like a smart plan. I'm sure you'll find something to occupy your time. Is there anything I can do to help?",
+                    "time": "15:47:56",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "That's really kind of you to offer. I appreciate it. I'm actually trying to find a new hobby. Do you have any suggestions?",
+                    "time": "15:47:58",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Well, it really depends on what kind of activities you're interested in. Are you looking for something that's physically active or something more creative?",
+                    "time": "15:48:00",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I'm open to anything really. I just want to try something new and have fun. I'm feeling a bit bored lately.",
+                    "time": "15:48:03",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "I hear ya. I know it can be hard to stay motivated when you're stuck in a rut. How about we go for a hike this weekend? It'll be a great way to get out of the house and clear our heads. We can even bring a picnic lunch and make a day out of it. What do you think?",
+                    "time": "15:48:07",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "That sounds perfect! I could definitely use some fresh air and some new scenery. Plus, a picnic sounds like the perfect way to make it an enjoyable day. Let's do it!",
+                    "time": "15:48:10",
+                    "mine": false
+                }
+            ]
+        }
+    },
+    "154831": {
+        "15:48:48": {
+            "settings": {
+                "topic": "",
+                "type": "boring",
+                "kate_mood": "angry",
+                "bruce_mood": "excited"
+            },
+            "lines": [
+                {
+                    "sender": "Bruce",
+                    "text": "Hi Kate! I think dinossaurs are absolutely fascinating. I love learning about their anatomy and behavior, and the fact that they've been extinct for so long is really interesting. What about you? What do you think about them?",
+                    "time": "15:47:25",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Yeah, I guess dinossaurs are pretty interesting. I'm not really passionate about them like you are though. I've been feeling kind of down lately and it's been hard to focus on anything.",
+                    "time": "15:47:28",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "That's understandable. Is there anything I can do to help?",
+                    "time": "15:47:30",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Thanks for asking. I'm not sure if there's anything to be done, but it's nice to know you're here for me.",
+                    "time": "15:47:32",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Of course, I'm always here for you. So, what are your plans for the day? Anything exciting?",
+                    "time": "15:47:34",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Not really. I'm just trying to take things one day at a time.",
+                    "time": "15:47:36",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Sounds like a smart plan. I'm sure you'll find something to occupy your time. Is there anything I can do to help?",
+                    "time": "15:47:56",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "That's really kind of you to offer. I appreciate it. I'm actually trying to find a new hobby. Do you have any suggestions?",
+                    "time": "15:47:58",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Well, it really depends on what kind of activities you're interested in. Are you looking for something that's physically active or something more creative?",
+                    "time": "15:48:00",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I'm open to anything really. I just want to try something new and have fun. I'm feeling a bit bored lately.",
+                    "time": "15:48:03",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "I hear ya. I know it can be hard to stay motivated when you're stuck in a rut. How about we go for a hike this weekend? It'll be a great way to get out of the house and clear our heads. We can even bring a picnic lunch and make a day out of it. What do you think?",
+                    "time": "15:48:07",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "That sounds perfect! I could definitely use some fresh air and some new scenery. Plus, a picnic sounds like the perfect way to make it an enjoyable day. Let's do it!",
+                    "time": "15:48:10",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Great! I'll make the arrangements and let you know when and where to meet.",
+                    "time": "15:48:33",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Awesome! I'm looking forward to it. In the meantime, what have you been up to lately? Anything exciting?",
+                    "time": "15:48:35",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Not really. Just working and trying to keep up with all the mundane tasks that come with it. It's been quite a challenge lately. How about you?",
+                    "time": "15:48:38",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Oh, I've been busy too! I just finished up a project that I've been working on for a while. It was quite a challenge, but I'm so glad it's done. It feels so great to have it finished. How have you been staying motivated to keep up with all the work?",
+                    "time": "15:48:41",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "I just keep reminding myself that it's all important and that I'm making progress. It helps to focus on the end goal and not get overwhelmed with the everyday tasks. What about you? How do you stay motivated?",
+                    "time": "15:48:45",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I try to break my tasks down into smaller, more manageable chunks and set short-term goals for myself. That way I can measure my progress and stay motivated to keep going. It's also great to have someone to talk to who understands what I'm going through. It's been really helpful for me.",
+                    "time": "15:48:48",
+                    "mine": false
+                }
+            ]
+        }
     }
 }
