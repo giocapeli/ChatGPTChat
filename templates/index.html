@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>WhatsApp ChatGPT</title>
-	<link rel="stylesheet" href= "{{ url_for('static',filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 	<div id="chatbox" class="chatbox">
@@ -12,7 +12,6 @@
 				<div class="title">ChatGPT WhatsApp</div>
 			</div>
 			<div class="messages">
-				<!-- Loop through the messages array and generate the HTML for each message -->
 				{% for message in messages %}
 					<div class="message{% if message.mine %}mine{% endif %}">
 						<div class="sender">{{ message.sender }}</div>
@@ -24,49 +23,48 @@
 		</div>
 	</div>
 	<div id="formbox" class="formbox">
-	<form class="form" action="/" method="post">
-		<span class="formitem">
-		  <label for="topic">Topic:</label>
-		  <input type="text" name="topic"/>
-		</span>
-		<span class="formitem">
-		  <label for="type">Type of conversation:</label>
-		  <select name="type" id="type">
-			<option value="">Random</option>
-			<option value="formal">Formal</option>
-			<option value="casual">Casual</option>
-			<option value="small talk">Small Talk</option>
-			<option value="boring">Boring</option>
-			<option value="interesting">Interesting</option>
-		  </select>
-		</span>
-		<span class="formitem">
-		  <label for="kate_mood">Kate mood:</label>
-		  <select name="kate_mood" id="kate_mood">
-			<option value="">Random</option>
-			<option value="angry">Angry</option>
-			<option value="happy">Happy</option>
-			<option value="excited">Excited</option>
-			<option value="depressed">Depressed</option>
-			<option value="bored">Bored</option>
-		  </select>
-		</span>
-		<span class="formitem">
-		  <label for="bruce_mood">Bruce mood:</label>
-		  <select name="bruce_mood" id="bruce_mood">
-			<option value="">Random</option>
-			<option value="angry">Angry</option>
-			<option value="happy">Happy</option>
-			<option value="excited">Excited</option>
-			<option value="depressed">Depressed</option>
-			<option value="bored">Bored</option>
-		  </select>
-		</span>
-		<span class="formitem">
-		  <input type="submit" value="{% if messages %}Continue{% endif %} Chat" />
-		</span>
-	  </form>	 
-	</div> 
+		<form class="form" action="/" method="post">
+			<div class="formitem">
+				<label for="topic">Topic:</label>
+				<input type="text" name="topic" id="topic">
+			</div>
+			<div class="formitem">
+				<label for="type">Type of conversation:</label>
+				<select name="type" id="type">
+					<option value="">Random</option>
+					<option value="formal">Formal</option>
+					<option value="casual">Casual</option>
+					<option value="small talk">Small Talk</option>
+					<option value="boring">Boring</option>
+					<option value="interesting">Interesting</option>
+				</select>
+			</div>
+			<div class="formitem">
+				<label for="kate_mood">Kate mood:</label>
+				<select name="kate_mood" id="kate_mood">
+					<option value="">Random</option>
+					<option value="angry">Angry</option>
+					<option value="happy">Happy</option>
+					<option value="excited">Excited</option>
+					<option value="depressed">Depressed</option>
+					<option value="bored">Bored</option>
+				</select>
+			</div>
+			<div class="formitem">
+				<label for="bruce_mood">Bruce mood:</label>
+				<select name="bruce_mood" id="bruce_mood">
+					<option value="">Random</option>
+					<option value="angry">Angry</option>
+					<option value="happy">Happy</option>
+					<option value="excited">Excited</option>
+					<option value="depressed">Depressed</option>
+					<option value="bored">Bored</option>
+				</select>
+			</div>
+			<div class="formitem">
+				<input type="submit" value="{% if messages %}Continue{% else %}Start Chat{% endif %}">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
-        

@@ -40,7 +40,7 @@ body {
   height: 40px;
   margin-right: 10px;
   border-radius: 50%;
-  background-image: url('https://seeklogo.com/images/C/chatgpt-logo-02AFA704B5-seeklogo.com.png');
+  background-image: url("/static/openai-logo.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

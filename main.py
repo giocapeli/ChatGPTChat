@@ -9,24 +9,24 @@ app = Flask(__name__)
 
 person_a_name = "Bruce"
 person_b_name = "Kate"
-type_of_conversation = "casual"
 history_lines_objects = []
 
 @app.route("/", methods=("GET", "POST"))
 def index():
+    global type_of_conversation
     conversation_id = time.strftime("%H%M%S", time.localtime())
+
     if request.method == "POST":
         topic = request.form.get("topic", "")
         type_of_conversation = request.form.get("type", "")
-        new_opener = [f'Start a {type_of_conversation} conversation or keep up with the subject.']
-        print(new_opener)
+        new_opener = f'Start a {type_of_conversation} conversation or keep up with the subject.'
         kate_mood = request.form.get("kate_mood", "")
         bruce_mood = request.form.get("bruce_mood", "")
         settings = {
-            "topic":topic,
-            "type":type_of_conversation,
-            "kate_mood":kate_mood,
-            "bruce_mood":bruce_mood
+            "topic": topic,
+            "type": type_of_conversation,
+            "kate_mood": kate_mood,
+            "bruce_mood": bruce_mood
         }
         person_a = {
             "name": person_a_name,
@@ -41,21 +41,21 @@ def index():
             new_line(str_opener, person_a, settings, person_b)
             new_line(str_opener, person_b, settings, person_a)
         save_chat(settings, history_lines_objects, conversation_id)
+
     return render_template("index.html", messages=history_lines_objects)
 
 def new_line(start_prompt, person, settings, other_person):
-    new_prompt = f"{start_prompt} You are {person['name']} and you're talking to {other_person['name']}, you mood is {person['mood']} but don't say it directly.\n"
-    new_history_lines_objects = history_lines_objects.copy()
-    if new_history_lines_objects:
-        if len(new_history_lines_objects) > 2:
-            new_history_lines_objects = new_history_lines_objects[len(new_history_lines_objects)-2:]
-        new_prompt += "".join(f"{obj['sender']}: {obj['text']}\n" for obj in new_history_lines_objects)
-    else:
+    global history_lines_objects
+    new_prompt = f"{start_prompt} You are {person['name']} and you're talking to {other_person['name']}, act like you are mood {person['mood']} but don't say it directly.\n"
+    new_history_lines_objects = history_lines_objects[-2:] if history_lines_objects else []
+    if not new_history_lines_objects:
         new_prompt += f"{person_b_name}: Hello, you! "
-        if len(settings["topic"]):
+        if settings["topic"]:
             new_prompt += f'What do you think about {settings["topic"]}?'
+    else:
+        new_prompt += "".join(f"{obj['sender']}: {obj['text']}\n" for obj in new_history_lines_objects)
     new_prompt += f"\n{person['name']}:"
-    print(f"New prompt:\n{new_prompt}")
+
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=new_prompt,
@@ -63,17 +63,17 @@ def new_line(start_prompt, person, settings, other_person):
         max_tokens=1000,
     )
     result = response.choices[0].text
-    print(f"Result:\n{result}")
-    time.sleep(1)
+
+    time.sleep(1) #TODO make it async
     line = f"{person['name']}: {result.strip()}"
-    history_lines_objects.append({"sender": person['name'], "text": result.strip(),"time": time.strftime("%H:%M:%S", time.localtime()), "mine":person['name'] == person_a_name})
+    history_lines_objects.append({"sender": person['name'], "text": result.strip(),"time": time.strftime("%H:%M:%S", time.localtime()), "mine": person['name'] == person_a_name})
 
 def save_chat(settings, lines, conversation_id):
     history = {
-        conversation_id:{
-            time.strftime("%H:%M:%S", time.localtime()):{
-                "settings":settings,
-                "lines":lines
+        conversation_id: {
+            time.strftime("%H:%M:%S", time.localtime()): {
+                "settings": settings,
+                "lines": lines
             }
         }
     }
@@ -91,4 +91,4 @@ def save_chat(settings, lines, conversation_id):
             data_file.close()
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

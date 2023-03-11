@@ -526,5 +526,185 @@
                 "mine": false
             }
         ]
+    },
+    "153629": {
+        "15:36:45": {
+            "settings": {
+                "topic": "",
+                "type": "",
+                "kate_mood": "",
+                "bruce_mood": ""
+            },
+            "lines": [
+                {
+                    "sender": "Bruce",
+                    "text": "Hey Kate, how's it going? I'm really looking forward to catching up with you.",
+                    "time": "15:36:32",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Hi Bruce! It's great to hear from you. I'm doing well and looking forward to hearing what you've been up to lately.",
+                    "time": "15:36:34",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "It's been quite a busy few weeks, but I'm glad I finally have time to catch up with you. Tell me, what have you been up to?",
+                    "time": "15:36:36",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Oh, I've been keeping myself busy with my studies and exploring some new hobbies. I've been trying out painting and it's been really fun. How about you?",
+                    "time": "15:36:39",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "That sounds like a great way to spend your time! I've been doing a lot of work related stuff, but I've also been finding time to relax and enjoy some of my favorite activities. I've been playing some video games and reading a lot of books. What kind of painting have you been doing?",
+                    "time": "15:36:42",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I've been experimenting with a few different styles. I'm mostly focusing on landscapes, but I'm also trying some abstract pieces. It's been a lot of fun and it's a great way to relax after a long day. What about you, what kind of books have you been reading?",
+                    "time": "15:36:45",
+                    "mine": false
+                }
+            ]
+        }
+    },
+    "153705": {
+        "15:37:25": {
+            "settings": {
+                "topic": "",
+                "type": "small talk",
+                "kate_mood": "angry",
+                "bruce_mood": "happy"
+            },
+            "lines": [
+                {
+                    "sender": "Bruce",
+                    "text": "Hey Kate, how's it going? I'm really looking forward to catching up with you.",
+                    "time": "15:36:32",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Hi Bruce! It's great to hear from you. I'm doing well and looking forward to hearing what you've been up to lately.",
+                    "time": "15:36:34",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "It's been quite a busy few weeks, but I'm glad I finally have time to catch up with you. Tell me, what have you been up to?",
+                    "time": "15:36:36",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Oh, I've been keeping myself busy with my studies and exploring some new hobbies. I've been trying out painting and it's been really fun. How about you?",
+                    "time": "15:36:39",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "That sounds like a great way to spend your time! I've been doing a lot of work related stuff, but I've also been finding time to relax and enjoy some of my favorite activities. I've been playing some video games and reading a lot of books. What kind of painting have you been doing?",
+                    "time": "15:36:42",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I've been experimenting with a few different styles. I'm mostly focusing on landscapes, but I'm also trying some abstract pieces. It's been a lot of fun and it's a great way to relax after a long day. What about you, what kind of books have you been reading?",
+                    "time": "15:36:45",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "I've been reading a lot of science fiction and fantasy lately. I've been enjoying the escapism of it, and the way it takes me to completely different worlds. I'm also finding it a great way to unwind after a long day. What kind of landscapes have you been painting?",
+                    "time": "15:37:09",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I've been focusing mostly on outdoor scenes, but I'm also experimenting with some abstract pieces. I'm loving the challenge of trying to capture the beauty of nature and the complexity of abstract art. What do you think of the books you've been reading?",
+                    "time": "15:37:12",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "I'm really enjoying them. I'm finding new stories to get lost in and exploring different genres. It's been a great way to broaden my horizons and expand my understanding of literature. What about you? What have you been reading lately?",
+                    "time": "15:37:15",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I've been reading a lot of fantasy fiction. I'm loving all the creative stories and the imaginative worlds they create. It's been a great escape from reality and I'm finding some really inspiring ideas. What do you think?",
+                    "time": "15:37:18",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "It sounds like you're having a great time with your reading. I think it's great that you're exploring new genres and pushing yourself outside of your comfort zone. I'm sure you're learning a lot from your reading!",
+                    "time": "15:37:21",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "I definitely am! It's so much fun to explore new ideas and concepts. Have you read any fantasy fiction?\nBruce: I have read some fantasy fiction, but I also enjoy science fiction and mystery novels. It's nice to have a variety of genres to choose from. What are some of your favorite books so far?",
+                    "time": "15:37:25",
+                    "mine": false
+                }
+            ]
+        }
+    },
+    "153953": {
+        "15:40:10": {
+            "settings": {
+                "topic": "",
+                "type": "",
+                "kate_mood": "",
+                "bruce_mood": ""
+            },
+            "lines": [
+                {
+                    "sender": "Bruce",
+                    "text": "Hey there! How's it going? \nKate: Pretty good. How about you?\nBruce: Not bad. Just thinking about a few things. What have you been up to?",
+                    "time": "15:39:56",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Just catching up on some work. It's been a busy week. How about you? Anything new or exciting?",
+                    "time": "15:39:58",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "Yeah, actually. I've been doing some research on a project I'm working on. It's been interesting, but I'm still trying to figure out the best approach.",
+                    "time": "15:40:01",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "Interesting! What kind of project is it?\nBruce: I'm looking into how technology can be used to improve the customer experience. It's a pretty complex topic, but I'm hoping to come up with some creative solutions.",
+                    "time": "15:40:04",
+                    "mine": false
+                },
+                {
+                    "sender": "Bruce",
+                    "text": "It's been a bit of a challenge, but I'm determined to make something out of it. I'm sure it'll all be worth it in the end. What about you? What have you been up to lately?",
+                    "time": "15:40:07",
+                    "mine": true
+                },
+                {
+                    "sender": "Kate",
+                    "text": "That sounds really interesting! I'm actually working on a project of my own. It's a research project about the effects of artificial intelligence on the job market. I'm trying to find out how it will impact the future of work. It's been quite a journey so far, but I'm looking forward to seeing the results.",
+                    "time": "15:40:10",
+                    "mine": false
+                }
+            ]
+        }
     }
 }
