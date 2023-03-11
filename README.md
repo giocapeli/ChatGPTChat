@@ -8,7 +8,7 @@ This app use the OpenAI API to simulate a conversation of two ChatGPT, taking so
 
 - Every imput is optional.
 - Each run makes 6 requests, so, 6 messages per run.
-- Because of token limitations, after the first run, just the settings and the last two messages are keep in the prompt, so it will loose the macro context.
+- Because of token limitations, after the first run, just the settings and the last two messages are keept in the prompt, so it will loose the macro context.
 - chat.json contains examples of data generated, you can delete it and the app will create a new file with the records you generated.
 
 ### Next features
