@@ -30,13 +30,12 @@ def index():
         }
         person_a = {
             "name": person_a_name,
-            "mood": kate_mood
+            "mood": bruce_mood
         }
         person_b = {
             "name": person_b_name,
-            "mood": bruce_mood
+            "mood": kate_mood
         }
-        str_opener = " ".join(new_opener)
         for _ in range(3):
             new_line(str_opener, person_a, settings, person_b)
             new_line(str_opener, person_b, settings, person_a)
