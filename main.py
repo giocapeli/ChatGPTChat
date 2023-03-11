@@ -36,6 +36,8 @@ def new_line(start_prompt, person):
     if len(history_lines_objects) > 0:
         for obj in history_lines_objects:
             new_prompt += f'Person {obj["person"]}: {obj["line"]}\n'
+    else:
+        new_prompt += f'Person 2: Hello, you!\n'
     new_prompt += f'Person {person}:'
     print('New prompt:\n'+ new_prompt)
     response = openai.Completion.create(
