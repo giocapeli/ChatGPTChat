@@ -48,7 +48,7 @@ def index():
         else:
             new_opener.append("There is no main topic. ")
         str_opener = " ".join(new_opener)
-        for _ in range(2):
+        for _ in range(3):
             new_line(str_opener, person_a)
             new_line(str_opener, person_b)
         print(history_lines_objects)
@@ -62,15 +62,14 @@ def new_line(start_prompt, person):
     else:
         new_prompt += f"{person_b}: Hello, you!\n"
     new_prompt += f"{person}:"
-    # print(f"New prompt:\n{new_prompt}")
-    # response = openai.Completion.create(
-    #     model="text-davinci-003",
-    #     prompt=new_prompt,
-    #     temperature=0.6,
-    #     max_tokens=1000,
-    # )
-    # result = response.choices[0].text
-    result = "test"
+    print(f"New prompt:\n{new_prompt}")
+    response = openai.Completion.create(
+        model="text-davinci-003",
+        prompt=new_prompt,
+        temperature=0.6,
+        max_tokens=1000,
+    )
+    result = response.choices[0].text
     print(f"Result:\n{result}")
     time.sleep(1)
     line = f"{person}: {result.strip()}"
